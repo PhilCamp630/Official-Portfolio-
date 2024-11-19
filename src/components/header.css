@@ -19,8 +19,6 @@
 .nav_toggle {
     color: var(--title-color);
     font-weight: var(--font-medium);
-    column-gap: 2rem ;
-
 }
 
 .nav_list {
@@ -37,10 +35,23 @@
     font-weight: var(--font-medium)l;
     transition: .3s;
 }
-
-/* .nav_icon, */
+ 
+.nav_icon, 
 .nav_close,
 .nav_toggle {
     display: none;
 }
 
+/* Active Link */
+.active-link,
+.nav_link:hover {
+    color: var(--title-color-dark);
+}
+
+
+
+/* Breakpoints */
+
+/* middle dev */
+@media screen and (max-width: 768px) {
+}

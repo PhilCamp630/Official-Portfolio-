@@ -9,7 +9,7 @@ const Header = () => {
             <div className="nav_menu">
               <ul className="nav_list grid">
                   <li className="nav_item">
-                    <a href="#home" className="nav_link">
+                    <a href="#home" className="nav_link active-link">
                       <i className="uil uil-home nav_icon"></i> Home
                     </a>
                   </li>
