@@ -9,42 +9,42 @@ const Header = () => {
             <div className="nav_menu">
               <ul className="nav_list grid">
                   <li className="nav_item">
-                    <a href="" className="nav_link">
-                      <i className="uil uil- nav_icon"></i>
+                    <a href="#home" className="nav_link">
+                      <i className="uil uil-home nav_icon"></i> Home
                     </a>
                   </li>
 
                   <li className="nav_item">
-                    <a href="" className="nav_link">
-                      <i className="uil uil- nav_icon"></i>
+                    <a href="#about" className="nav_link">
+                      <i className="uil uil-user nav_icon"></i> About
                     </a>
                   </li>
 
                   <li className="nav_item">
-                    <a href="" className="nav_link">
-                      <i className="uil uil- nav_icon"></i>
+                    <a href="#skills" className="nav_link">
+                      <i className="uil uil-file-check-alt nav_icon"></i> Skills
                     </a>
                   </li>
 
                   <li className="nav_item">
-                    <a href="" className="nav_link">
-                      <i className="uil uil- nav_icon"></i>
+                    <a href="portfolio" className="nav_link">
+                      <i className="uil uil-scenery nav_icon"></i> Portfolio
                     </a>
                   </li>
 
                   <li className="nav_item">
-                    <a href="" className="nav_link">
-                      <i className="uil uil- nav_icon"></i>
+                    <a href="#contact" className="nav_link">
+                      <i className="uil uil-message nav_icon"></i> Contact
                     </a>
-                  </li>
-
-                  <li className="nav_item">
-                    <a href="" className="nav_link">
-                      <i className="uil uil- nav_icon"></i>
-                    </a>
-                  </li>
+                  </li> 
               </ul>
+
+              <i className="uil uil-times nav_close"></i>
             </div>
+
+            <nav className="nav_toggle">
+              <i className="uil uil-apps"></i>
+            </nav>
         </nav>
     </header>
   )
