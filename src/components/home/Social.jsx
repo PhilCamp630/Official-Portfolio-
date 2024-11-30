@@ -1,7 +1,5 @@
 import React from "react";
 
-import React from 'react'
-
 const Social = () => {
   return (
     <div className="home_social"> 
