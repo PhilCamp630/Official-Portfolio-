@@ -1,3 +1,5 @@
+/* css for the home page and section  */
+
 .home_content {
     grid-template-columns: 116px repeat(2, 1fr);
     padding-top: 5.5rem;
@@ -28,3 +30,4 @@
     left: 470px;
     bottom: 190px;
 }
+
