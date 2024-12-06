@@ -10,7 +10,7 @@ body {
     #f7c8ae,
     #e89d87, /* Mid peachy-brown */
     #e79072, /* Light brown */
-    #fa8565, /* Medium warm brown */
+    #fc9477, /* Medium warm brown */
     #e79072, /* Light coral brown */
     #f2b7a9,
     #f7c8ae,
@@ -18,7 +18,7 @@ body {
     #f7c8ae
   );
   background-size: 500% 100%; /* Large enough for smooth looping */
-  animation: moveGradient 30s linear infinite; /* Continuous smooth animation */
+  animation: moveGradient 60s linear infinite; /* Continuous smooth animation */
   overflow: hidden;
 }
 
@@ -38,5 +38,4 @@ body {
 #6a3f36 (Warm Earthy Brown)
 #7b4f43 (Reddish Walnut Brown)
 #8d5e4f (Muted Cocoa Brown)
-#a77b6b (Light Mocha Brown)
- */
+#a77b6b (Light Mocha Brown) */

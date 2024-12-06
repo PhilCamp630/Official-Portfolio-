@@ -1,4 +1,7 @@
 /* css for the home page and section  */
+.home_container {
+    row-gap: 7rem;
+}
 
 .home_content {
     grid-template-columns: 116px repeat(2, 1fr);
@@ -37,28 +40,91 @@
 .home_subtitle{
     position: relative;
     font-size: var(--h3-font-size);
-    padding-left: 5.4rem;
+    /* padding-left: 5.4rem; */
     font-weight: var(--font-normal);
-    margin-bottom: var(--mb-0-1);
+    margin-bottom: var(--mb-1);
 }
+
+/* .home_subtitle::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: var(--text-color);
+    right: 0;
+    top: 1rem;
+} */
 
 .home_img {
     background: url(../../assets/assets/profile.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 9px rgb(255, 255, 255 / 30%);
+    box-shadow: inset 0 0 0 12px rgb(255 255 255 / 30%);
     order: 1;
     justify-self: center;
-    width: 300px;
-    height: 300px;
+    width: 380px;
+    height: 380px;
+    border: 5px solid #4a2e2b;
+    animation: profile_animate 8s ease-in-out infinite 1s;
 }
+
 #home { 
     position: relative;
     left: 470px;
-    bottom: 190px;
+    bottom: 90px;
 }
 
+@keyframes profile_animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+}
+
+.home_scroll{
+    margin-left: 9.25rem;
+}
+
+.wheel {
+    animation: scroll 2s ease infinite;
+} 
 
 
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
 
+    30% {
+        transform: translateY(3.75rem);
+    }
+} 
+
+.home_scroll-name {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-0-25);
+    margin-left: 2px;
+} 
+
+.home_scroll-arrow {
+    font-size: 1.25rem;
+    color: var(--title-color);
+} 
+
+
+/* text colors 
+#4a2e2b (Dark Chocolate Brown)
+#6a3f36 (Warm Earthy Brown)
+#7b4f43 (Reddish Walnut Brown)
+#8d5e4f (Muted Cocoa Brown)
+#a77b6b (Light Mocha Brown) */
