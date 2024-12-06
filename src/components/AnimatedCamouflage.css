@@ -1,79 +1,42 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background: linear-gradient(90deg, #e52e71, #ff8a00);
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    #f7c8ae,
+    #f7c8ae, /* Light peach */
+    #f7c8ae, /* Soft pinkish peach */
+    #f7c8ae,
+    #e89d87, /* Mid peachy-brown */
+    #e79072, /* Light brown */
+    #fa8565, /* Medium warm brown */
+    #e79072, /* Light coral brown */
+    #f2b7a9,
+    #f7c8ae,
+    #f7c8ae,  /* Repeat start color */
+    #f7c8ae
+  );
+  background-size: 500% 100%; /* Large enough for smooth looping */
+  animation: moveGradient 30s linear infinite; /* Continuous smooth animation */
+  overflow: hidden;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 0%;
   }
-  
-  .slider-thumb {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  100% {
+    background-position: 100% 0%;
   }
-  
-  .shape {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: red; /* Default color */
-    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
-    will-change: border-radius, transform, opacity;
-    animation: sliderShape 6s ease-in-out infinite alternate;
-    mix-blend-mode: screen; /* Blend colors */
-    z-index: -1;
-  }
-  
-  .shape:nth-child(1) {
-    background: #ff0054;
-    animation-delay: 0s;
-    left: 20%;
-    top: 20%;
-  }
-  
-  .shape:nth-child(2) {
-    background: #ffa400;
-    animation-delay: 1s;
-    left: 50%;
-    top: 10%;
-  }
-  
-  .shape:nth-child(3) {
-    background: #34d1bf;
-    animation-delay: 2s;
-    left: 70%;
-    top: 50%;
-  }
-  
-  .shape:nth-child(4) {
-    background: #6a0dad;
-    animation-delay: 3s;
-    left: 30%;
-    top: 70%;
-  }
-  
-  .shape:nth-child(5) {
-    background: #ff477e;
-    animation-delay: 4s;
-    left: 80%;
-    top: 30%;
-  }
-  
-  @keyframes sliderShape {
-    0%, 100% {
-      border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-      transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
-    }
-    34% {
-      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
-      transform: translate3d(-10px, 10px, 0) rotate(10deg) scale(1.2);
-    }
-    50% {
-      transform: translate3d(10px, -10px, 0) rotate(-10deg) scale(1.1);
-    }
-    67% {
-      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
-      transform: translate3d(0, -20px, 0) rotate(5deg) scale(1.3);
-    }
-  }
-  
+}
+
+
+
+/* text colors 
+#4a2e2b (Dark Chocolate Brown)
+#6a3f36 (Warm Earthy Brown)
+#7b4f43 (Reddish Walnut Brown)
+#8d5e4f (Muted Cocoa Brown)
+#a77b6b (Light Mocha Brown)
+ */
