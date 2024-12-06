@@ -41,7 +41,7 @@ const Header = () => {
           </ul>
 
           {/* Close Button (only shown when menu is open) */}
-          <i className="uil uil-times nav_close" onClick={() => showMenu(false)}></i>
+          <i className="uil uil-times nav_close" onClick={() => showMenu(!Toggle)}></i>
         </div>
 
         {/* Toggle Button (hamburger) */}

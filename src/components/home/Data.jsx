@@ -56,6 +56,7 @@ const Data = () => {
       </h1>
       <h3 className="home_subtitle">Fullstack Developer</h3>
       <p className="home_description">A blossoming developer with a passion for learning and coding</p>
+      <div className='hello-but'>
       <a href="#contact" className="button button--flex">
         Say Hello
         <svg
@@ -76,6 +77,7 @@ const Data = () => {
           ></path>
         </svg>
       </a>
+      </div>
     </div>
   )
 }

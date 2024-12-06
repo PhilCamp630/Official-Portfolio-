@@ -4,8 +4,9 @@
     top: 0;
     left: 0; 
     z-index: var(--z-fixed);
-    background-color: var(--container-color);
+    background-color: var(--body-color);
 }
+
 
 .nav { 
     height: calc(var(--header-height) + 1.5rem );
@@ -36,6 +37,7 @@
     transition: .3s;
 }
 
+
 .nav_icon, 
 .nav_close,
 .nav_toggle {
@@ -48,8 +50,6 @@
     color: var(--title-color-dark);
 }
 
-/* Breakpoints */
-
 /* Middle Devices (768px and below) */
 @media screen and (max-width: 768px) {
     .header {
@@ -60,10 +60,9 @@
     .nav {
         height: var(--header-height);
     }
-
     .nav_menu {
         position: fixed;
-        bottom: 0;
+        bottom: -100%;
         left: 0;
         width: 100%;
         background-color: var(--body-color);
@@ -71,52 +70,34 @@
         box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
-        transform: translateY(100%); /* Initially hidden */
-    }
+        
+    } 
 
-    /* Show menu */
-    .show-menu {
-        transform: translateY(0);
+    /* Show Menu   */
+
+    .show-menu{
+        bottom: 0;
     }
 
     .nav_list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
-    }
+    } 
 
     .nav_icon {
         font-size: 1.2rem;
     }
 
     .nav_close {
-        position: absolute;
-        right: 1.3rem;
-        bottom: 1rem; /* Position at the bottom-right */
         font-size: 1.5rem;
         cursor: pointer;
-        color: var(--title-color);
     }
 
     .nav_close:hover {
         color: var(--title-color-dark);
     }
 
-    /* Box icon (hamburger) toggle at bottom-right */
-    .nav_toggle {
-        font-size: 1.5rem;
-        cursor: pointer;
-        display: block;
-        position: fixed;
-        bottom: 1rem; /* Position the toggle button */
-        right: 1rem; /* Position the toggle button on the right */
-        z-index: 999; /* Ensure it's above the menu */
-    }
-
-    /* Hide hamburger toggle when menu is open */
-    .show-menu ~ .nav_toggle {
-        display: none;
-    }
 
     .nav_icon,
     .nav_close,
