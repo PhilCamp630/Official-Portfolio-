@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    #f7c8ae,
+    #f7c8ae, 
+    #f7c8ae, 
+    #f7c8ae,
+    #e89d87, 
+    #e79072, 
+    #fc9477, 
+    #e79072, 
+    #f2b7a9,
+    #f7c8ae,
+    #f7c8ae, 
+    #f7c8ae
+  );
+  background-size: 500% 100%; 
+  animation: moveGradient 60s linear infinite; 
+  overflow: hidden;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+
+
+/* text colors 
+#4a2e2b (Dark Chocolate Brown)
+#6a3f36 (Warm Earthy Brown)
+#7b4f43 (Reddish Walnut Brown)
+#8d5e4f (Muted Cocoa Brown)
+#a77b6b (Light Mocha Brown) */
